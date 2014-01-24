@@ -1,17 +1,22 @@
 {
     "name": "alrik11es/spanish-utils",
-    "description": "A set of tools for Spanish bureaucracy like CIF calculation, IBAN...",
+    "description": "A set of tools for Spanish bureaucracy like CIF calculation, DNI, IBAN...",
     "keywords": ["CIF", "DNI", "NIE", "IBAN"],
     "homepage": "",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
-            "name": "Marcos Sigueros Fernández"
+            "name": "Marcos Sigueros Fernández",
+            "homepage": "https://github.com/alrik11es/"
         }
     ],
     "require": {
-        "php": ">=5.3.0"
+        "php": ">=5.3.0",
+        "jschaedl/iban": "v1.1.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*"
     },
     "autoload": {
         "psr-0": {

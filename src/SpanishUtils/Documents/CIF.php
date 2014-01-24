@@ -11,14 +11,17 @@ class CIF extends Document implements DocumentInterface {
         return $this->validateCif($this->data);
     }
 
-    // Valida CIFs
-    // El código comentado es para usar en modelos de CakePHP
-    protected function validateCif ($cif /*$check*/) {
+    /**
+     * CIFs validation
+     * This is used to validate the CIF
+     * @param $cif
+     * @return bool
+     */
+    protected function validateCif ($cif) {
         $cif_codes = 'JABCDEFGHI';
 
-        // $cif = array_pop ($check);
-
         $sum = (string) $this->getCifSum ($cif);
+
         $n = (10 - substr ($sum, -1)) % 10;
 
         if (preg_match ('/^[ABCDEFGHJNPQRSUVW]{1}/', $cif)) {
