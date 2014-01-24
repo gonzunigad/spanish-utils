@@ -41,8 +41,7 @@
 
 <p>Do you ever wonder a composer lib with all that annoying checks of spanish bureocracy. You've got it.</p>
 
-<pre><code>
-$dni = \SpanishUtils\Documents\NIF::setUp('04381012H');
+<pre><code>$dni = \SpanishUtils\Documents\NIF::setUp('04381012H');
 $valid = \SpanishUtils\Checker::check($dni);
 if($valid){
   // Do awesome stuff
