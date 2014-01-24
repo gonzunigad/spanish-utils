@@ -4,8 +4,6 @@
     <testsuites>
         <testsuite name="CheckerTest">
             <directory suffix='.php'>tests/Checker/</directory>
-            <directory suffix=".php">vendor/</directory>
-            <directory suffix=".php">src/</directory>
         </testsuite>
     </testsuites>
 </phpunit>
