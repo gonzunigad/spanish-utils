@@ -2,7 +2,7 @@
 
 <phpunit bootstrap="tests/bootstrap.php" colors="true">
     <testsuites>
-        <testsuite name="CheckerTest">
+        <testsuite name="unit">
             <directory suffix='.php'>tests/unit/</directory>
         </testsuite>
     </testsuites>

@@ -20,8 +20,6 @@ class NIF extends Utility implements UtilityInterface{
     protected function validateNif ($nif) {
         $nif_codes = 'TRWAGMYFPDXBNJZSQVHLCKE';
 
-        // $nif = strtoupper (array_pop ($check));
-
         $sum = (string) Utils::getCifSum ($nif);
         $n = 10 - substr($sum, -1);
 
