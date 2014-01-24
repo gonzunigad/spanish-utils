@@ -2,8 +2,8 @@
 
 <phpunit bootstrap="tests/bootstrap.php" colors="true">
     <testsuites>
-        <testsuite name="NanoPHP Test Suite">
-            <directory suffix='.php'>tests/utils/</directory>
+        <testsuite name="CheckerTest">
+            <directory suffix='.php'>tests/utils/*</directory>
             <directory suffix=".php">vendor/</directory>
         </testsuite>
     </testsuites>
