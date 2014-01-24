@@ -1,11 +1,11 @@
 <?php
 
-namespace SpanishUtils\Documents;
+namespace SpanishUtils\Components;
 
-use SpanishUtils\Document;
+use SpanishUtils\Interfaces\UtilityInterface;
+use SpanishUtils\Utility;
 
-class NIF extends Document implements DocumentInterface {
-
+class NIF extends Utility implements UtilityInterface{
 
     public function checkData()
     {
@@ -22,7 +22,7 @@ class NIF extends Document implements DocumentInterface {
 
         // $nif = strtoupper (array_pop ($check));
 
-        $sum = (string) $this->getCifSum ($nif);
+        $sum = (string) Utils::getCifSum ($nif);
         $n = 10 - substr($sum, -1);
 
         if (preg_match ('/^[0-9]{8}[A-Z]{1}$/', $nif)) {

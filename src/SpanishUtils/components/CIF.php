@@ -1,10 +1,11 @@
 <?php
 
-namespace SpanishUtils\Documents;
+namespace SpanishUtils\Components;
 
-use SpanishUtils\Document;
+use SpanishUtils\Interfaces\UtilityInterface;
+use SpanishUtils\Utility;
 
-class CIF extends Document implements DocumentInterface {
+class CIF extends Utility  implements UtilityInterface {
 
     public function checkData()
     {
@@ -20,7 +21,7 @@ class CIF extends Document implements DocumentInterface {
     protected function validateCif ($cif) {
         $cif_codes = 'JABCDEFGHI';
 
-        $sum = (string) $this->getCifSum ($cif);
+        $sum = (string) Utils::getCifSum ($cif);
 
         $n = (10 - substr ($sum, -1)) % 10;
 
