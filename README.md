@@ -12,7 +12,7 @@ $result = $dni->checkData();
 
 Other example:
 ```php
-$cif = \SpanishUtils\Components\NIF::setUp('N99461501');
+$cif = \SpanishUtils\Components\CIF::setUp('N99461501');
 $result = $cif->checkData();
 
 ```
