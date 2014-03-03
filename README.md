@@ -3,7 +3,16 @@ spanish-utils [![Build Status](https://travis-ci.org/alrik11es/spanish-utils.png
 
 A set of tools for Spanish bureaucracy like CIF calculation, IBAN...
 
+As simple as this:
 ```php
-$nif = \SpanishUtils\Components\NIF::setUp('');
+$dni = \SpanishUtils\Components\NIF::setUp('04381012H');
+$result = $dni->checkData();
+
+```
+
+Other example:
+```php
+$cif = \SpanishUtils\Components\NIF::setUp('N99461501');
+$result = $cif->checkData();
 
 ```
