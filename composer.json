@@ -2,7 +2,6 @@
     "name": "alrik11es/spanish-utils",
     "description": "A set of tools for Spanish bureaucracy like CIF calculation, DNI, IBAN...",
     "keywords": ["CIF", "DNI", "NIE", "IBAN"],
-    "homepage": "",
     "type": "library",
     "license": "MIT",
     "authors": [
