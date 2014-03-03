@@ -7,12 +7,10 @@ As simple as this:
 ```php
 $dni = \SpanishUtils\Components\NIF::setUp('04381012H');
 $result = $dni->checkData();
-
 ```
 
 Other example:
 ```php
 $cif = \SpanishUtils\Components\CIF::setUp('N99461501');
 $result = $cif->checkData();
-
 ```
