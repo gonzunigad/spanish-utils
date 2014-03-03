@@ -2,3 +2,8 @@ spanish-utils [![Build Status](https://travis-ci.org/alrik11es/spanish-utils.png
 =============
 
 A set of tools for Spanish bureaucracy like CIF calculation, IBAN...
+
+```php
+$nif = \SpanishUtils\Components\NIF::setUp('');
+
+```
