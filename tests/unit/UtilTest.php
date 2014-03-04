@@ -10,7 +10,15 @@ class CheckerTest extends PHPUnit_Framework_TestCase {
         $result = $dni->checkData();
         $this->assertTrue($result);
 
+        $dni = NIF::setUp('04381012h');
+        $result = $dni->checkData();
+        $this->assertTrue($result);
+
         $dni = NIF::setUp('Z6171167L');
+        $result = $dni->checkData();
+        $this->assertTrue($result);
+
+        $dni = NIF::setUp('z6171167l');
         $result = $dni->checkData();
         $this->assertTrue($result);
     }

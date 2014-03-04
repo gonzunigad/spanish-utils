@@ -9,6 +9,7 @@ class NIF extends Utility implements UtilityInterface{
 
     public function checkData()
     {
+        $this->data = strtoupper($this->data);
         return $this->validateNif($this->data);
     }
 
