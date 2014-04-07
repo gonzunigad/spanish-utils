@@ -4,18 +4,14 @@ namespace SpanishUtils\Components;
 
 use SpanishUtils\Interfaces\UtilityInterface;
 use SpanishUtils\Utility;
+use IBAN\Validation\IBANValidator;
 
-class IBAN extends Utility  implements UtilityInterface{
+class IBAN extends Utility implements UtilityInterface{
 
     public function checkData()
     {
-        // TODO: Implement checkData() method.
+        $ibanValidator = new IBANValidator();
+        return $ibanValidator->validate($this->data);
     }
-
-    static public function setUp($data)
-    {
-        // TODO: Implement setUp() method.
-    }
-
 
 }
