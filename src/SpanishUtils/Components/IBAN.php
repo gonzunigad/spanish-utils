@@ -10,8 +10,8 @@ class IBAN extends Utility implements UtilityInterface{
 
     public function checkData()
     {
-        $ibanValidator = new IBANValidator();
-        return $ibanValidator->validate($this->data);
+        $ibanValidator = \IsoCodes\Iban::validate($this->data);
+        return $ibanValidator;
     }
 
 }
