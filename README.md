@@ -14,3 +14,10 @@ Other example:
 $cif = \SpanishUtils\Components\CIF::setUp('N99461501');
 $result = $cif->checkData();
 ```
+
+IBAN validator:
+```php
+$iban = IBAN::setUp('CZ49 2339 0395 7989 0507 1131');
+$result = $iban->checkData();
+```
+
