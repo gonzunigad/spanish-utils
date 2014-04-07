@@ -1,5 +1,6 @@
 <?php
 use \SpanishUtils\Components\NIF;
+use \SpanishUtils\Components\IBAN;
 use \SpanishUtils\Components\CIF;
 
 class CheckerTest extends PHPUnit_Framework_TestCase {
