@@ -29,3 +29,9 @@ $iban = \SpanishUtils\Components\IBAN::setUp('CZ49 2339 0395 7989 0507 1131');
 $result = $iban->checkData();
 ```
 
+References
+----------
+
+This package uses another libraries that you can also use in your package:
+
+* https://github.com/ronanguilloux/IsoCodes/tree/1.0.0
