@@ -3,6 +3,14 @@ spanish-utils [![Build Status](https://travis-ci.org/alrik11es/spanish-utils.png
 
 A set of tools for Spanish bureaucracy like CIF calculation, IBAN...
 
+Installation with composer
+--------------------------
+
+Take a look to this link https://packagist.org/packages/alrik11es/spanish-utils
+
+Usage
+-----
+
 As simple as this:
 ```php
 $dni = \SpanishUtils\Components\NIF::setUp('04381012H');
