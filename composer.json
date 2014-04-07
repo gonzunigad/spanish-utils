@@ -12,7 +12,7 @@
     ],
     "require": {
         "php": ">=5.3.0",
-        "jschaedl/iban": "v1.1.2"
+        "ronanguilloux/isocodes": "1.*"
     },
     "require-dev": {
         "phpunit/phpunit": "3.7.*"
